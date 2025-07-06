@@ -193,7 +193,6 @@ export default function Home() {
                 </CardContent>
               </Card>
             </div>
-             <p className="text-center text-sm text-muted-foreground pt-8">*Beberapa layanan dasar tersedia dengan skema kolaborasi/syarat tertentu. Pelajari lebih lanjut di halaman detail layanan.</p>
           </div>
         </AnimatedSection>
 
