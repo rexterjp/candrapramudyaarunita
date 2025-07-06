@@ -18,7 +18,7 @@ export default function Home() {
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
             <a href="#hero" className="text-muted-foreground transition-colors hover:text-accent">Beranda</a>
             <a href="#tentang-saya" className="text-muted-foreground transition-colors hover:text-accent">Tentang Saya</a>
-            <a href="#keahlian" className="text-muted-foreground transition-colors hover:text-accent">Keahlian</a>
+            <a href="#layanan" className="text-muted-foreground transition-colors hover:text-accent">Layanan</a>
             <a href="#karya-saya" className="text-muted-foreground transition-colors hover:text-accent">Karya Saya</a>
             <a href="#kontak" className="text-muted-foreground transition-colors hover:text-accent">Kontak</a>
           </nav>
@@ -78,7 +78,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="keahlian" className="py-20 md:py-24">
+        <section id="layanan" className="py-20 md:py-24">
           <div className="container space-y-12">
             <div className="text-center space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Ide yang Bisa Kita Wujudkan Bersama</h2>
