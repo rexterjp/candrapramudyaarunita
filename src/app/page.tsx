@@ -9,13 +9,14 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Progress } from '@/components/ui/progress';
-import { Github, Linkedin, Twitter, Laptop, BotMessageSquare, BrainCircuit, Globe, Mail, Phone } from 'lucide-react';
+import { Github, Linkedin, Twitter, Laptop, BotMessageSquare, BrainCircuit, Globe, Mail, Phone, Layers, FileText } from 'lucide-react';
 import { AnimatedSection } from '@/components/animated-section';
 
 const navItems = [
     { id: 'hero', label: 'Beranda' },
     { id: 'tentang-saya', label: 'Tentang Saya' },
     { id: 'apa-yang-saya-lakukan', label: 'Apa yang Saya Lakukan' },
+    { id: 'mitra-ai', label: 'Mitra AI Saya' },
     { id: 'karya-saya', label: 'Karya Saya' },
     { id: 'kontak', label: 'Kontak' },
 ];
@@ -79,7 +80,7 @@ export default function Home() {
                 return (
                     <a
                         key={item.id}
-                        href={`#${item.id}`}
+                        href={item.id === 'karya-saya' ? '/karya' : `#${item.id}`}
                         className={`relative transition-colors hover:text-accent ${
                             isActive
                                 ? 'text-primary font-semibold'
@@ -220,7 +221,77 @@ export default function Home() {
           </div>
         </AnimatedSection>
 
-        <AnimatedSection id="karya-saya" className="py-20 md:py-24 bg-secondary">
+        <AnimatedSection id="mitra-ai" className="py-20 md:py-24 bg-secondary">
+          <div className="container space-y-12">
+            <div className="text-center space-y-4">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Mitra AI Saya: Tim di Balik Transformasi Digital</h2>
+              <p className="text-muted-foreground md:text-xl max-w-3xl mx-auto">
+                Di balik setiap ide yang terwujud di sini, ada tim kolaborator yang luar biasa. Mereka mungkin bukan manusia, tapi kekuatan komputasi dan kecerdasan mereka adalah inti dari kemampuan saya untuk berinovasi tanpa batas, tanpa perlu menyentuh satu baris kode pun. Perkenalkan, rekan-kolaborasi AI saya:
+              </p>
+            </div>
+            <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-3 max-w-6xl mx-auto">
+              <Card className="flex flex-col text-center">
+                <CardHeader className="flex-grow">
+                  <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit">
+                    <BrainCircuit className="h-8 w-8 text-primary" />
+                  </div>
+                  <CardTitle className="mt-4 text-xl">GPT-4.1 (Generative Pre-trained Transformer)</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4 flex-grow">
+                  <div>
+                    <h4 className="font-semibold mb-1">Peran</h4>
+                    <p className="text-muted-foreground text-sm">Arsitek ide, pemecah masalah kompleks, dan penjelajah konsep. GPT-4.1 adalah otak di balik brainstorming awal, membantu saya menyusun kerangka konten, dan menemukan sudut pandang unik untuk setiap proyek.</p>
+                  </div>
+                  <div className="mt-4">
+                    <h4 className="font-semibold mb-1">Kekuatan</h4>
+                    <p className="text-muted-foreground text-sm">Pemahaman konteks mendalam, kemampuan menghasilkan teks yang koheren dan kreatif, serta kapasitas untuk memproses informasi dalam skala besar.</p>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="flex flex-col text-center">
+                <CardHeader className="flex-grow">
+                  <div className="mx-auto bg-accent/10 rounded-full p-4 w-fit">
+                    <Layers className="h-8 w-8 text-accent" />
+                  </div>
+                  <CardTitle className="mt-4 text-xl">Gemini 2.5 Pro</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4 flex-grow">
+                  <div>
+                    <h4 className="font-semibold mb-1">Peran</h4>
+                    <p className="text-muted-foreground text-sm">Pemikir serbaguna dan analis data. Gemini 2.5 Pro adalah ahli riset saya, membantu saya memahami tren pasar, menganalisis data, dan menyusun strategi yang solid untuk proyek-proyek digital.</p>
+                  </div>
+                  <div className="mt-4">
+                    <h4 className="font-semibold mb-1">Kekuatan</h4>
+                    <p className="text-muted-foreground text-sm">Kemampuan multimodal (memahami teks, gambar, audio, video), pemikiran logis, dan kecepatan dalam memproses serta menyajikan informasi relevan.</p>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="flex flex-col text-center">
+                <CardHeader className="flex-grow">
+                  <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit">
+                    <FileText className="h-8 w-8 text-primary" />
+                  </div>
+                  <CardTitle className="mt-4 text-xl">Claude Sonnet 4.0</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4 flex-grow">
+                  <div>
+                    <h4 className="font-semibold mb-1">Peran</h4>
+                    <p className="text-muted-foreground text-sm">Ahli komunikasi dan penyempurna konten. Claude Sonnet 4.0 adalah mitra saya dalam menyempurnakan narasi, memastikan setiap pesan disampaikan dengan jelas, etis, dan persuasif, baik untuk website maupun chatbot.</p>
+                  </div>
+                  <div className="mt-4">
+                    <h4 className="font-semibold mb-1">Kekuatan</h4>
+                    <p className="text-muted-foreground text-sm">Pemahaman nuansa bahasa yang luar biasa, kemampuan menulis yang panjang dan terstruktur, serta fokus pada keamanan dan etika dalam setiap interaksi.</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+             <p className="text-center text-muted-foreground max-w-2xl mx-auto">
+              Bersama mereka, saya mewujudkan potensi digital Anda—satu ide inovatif pada satu waktu.
+            </p>
+          </div>
+        </AnimatedSection>
+
+        <AnimatedSection id="karya-saya" className="py-20 md:py-24">
           <div className="container space-y-12">
             <div className="text-center space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Beberapa Karya Saya</h2>
@@ -257,7 +328,7 @@ export default function Home() {
           </div>
         </AnimatedSection>
 
-        <AnimatedSection id="kontak" className="py-20 md:py-24 bg-white">
+        <AnimatedSection id="kontak" className="py-20 md:py-24 bg-secondary">
           <div className="container max-w-6xl mx-auto">
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Mari Terhubung</h2>
