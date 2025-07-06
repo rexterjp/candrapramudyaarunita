@@ -78,8 +78,7 @@ export default function Home() {
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
             {navItems.map((item) => {
                 const isActive = activeSection === item.id;
-                const isKaryaLink = item.id === 'karya-saya';
-                const href = isKaryaLink ? '/karya' : `#${item.id}`;
+                const href = `#${item.id}`;
                 return (
                     <a
                         key={item.id}
@@ -91,7 +90,7 @@ export default function Home() {
                         }`}
                     >
                         {item.label}
-                        {isActive && !isKaryaLink &&(
+                        {isActive && (
                             <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-gradient-to-r from-primary to-accent"></span>
                         )}
                     </a>
