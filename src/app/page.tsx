@@ -79,7 +79,7 @@ export default function Home() {
                 return (
                     <a
                         key={item.id}
-                        href={item.id === 'karya-saya' ? '/karya' : `#${item.id}`}
+                        href={`#${item.id}`}
                         className={`relative transition-colors hover:text-accent ${
                             isActive
                                 ? 'text-primary font-semibold'
@@ -122,15 +122,31 @@ export default function Home() {
             <div className="text-center space-y-2 mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Tentang Saya: Merangkai Ide, Merangkul Transformasi</h2>
             </div>
-            <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-              <div className="flex justify-center">
-                 <Image 
-                    src="https://i.ibb.co/9k0LFhhD/cv.jpg" 
-                    alt="Candra Pramudya Arunita" 
-                    width={400} 
-                    height={400} 
-                    className="rounded-full object-cover w-48 h-48 md:w-64 md:h-64 shadow-lg"
-                    data-ai-hint="professional portrait" />
+            <div className="grid md:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
+              <div className="space-y-12">
+                <div className="flex justify-center">
+                   <Image 
+                      src="https://i.ibb.co/9k0LFhhD/cv.jpg" 
+                      alt="Candra Pramudya Arunita" 
+                      width={400} 
+                      height={400} 
+                      className="rounded-full object-cover w-48 h-48 md:w-64 md:h-64 shadow-lg"
+                      data-ai-hint="professional portrait" />
+                </div>
+                <div className="max-w-md mx-auto">
+                  <h3 className="text-2xl sm:text-3xl font-bold tracking-tighter font-headline mb-8 text-center">Skill Utama Saya</h3>
+                  <div className="space-y-6">
+                    {skills.map((skill) => (
+                      <div key={skill.name} className="text-left">
+                        <div className="flex justify-between items-center mb-2">
+                          <span className="font-medium text-foreground">{skill.name}</span>
+                          <span className="text-sm font-semibold text-primary">{skill.value}%</span>
+                        </div>
+                        <Progress value={skill.value} className="h-3" />
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
               <div className="space-y-4 text-muted-foreground md:text-lg">
                 <p>
@@ -147,22 +163,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            
-            <div className="max-w-4xl mx-auto mt-20 text-center">
-              <h3 className="text-2xl sm:text-3xl font-bold tracking-tighter font-headline mb-8">Skill Utama Saya</h3>
-              <div className="space-y-6">
-                {skills.map((skill) => (
-                  <div key={skill.name} className="text-left">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="font-medium text-foreground">{skill.name}</span>
-                      <span className="text-sm font-semibold text-primary">{skill.value}%</span>
-                    </div>
-                    <Progress value={skill.value} className="h-3" />
-                  </div>
-                ))}
-              </div>
-            </div>
-
           </div>
         </AnimatedSection>
 
