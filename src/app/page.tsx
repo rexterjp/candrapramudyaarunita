@@ -1,197 +1,202 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { Github, Linkedin, Twitter, Mail, Atom, Code2, Palette, Search } from 'lucide-react';
+import { Github, Linkedin, Twitter, Laptop, BotMessageSquare, BrainCircuit, Globe } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-dvh bg-background font-body">
+    <div className="flex flex-col min-h-dvh bg-background font-body text-foreground">
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-14 max-w-screen-2xl items-center justify-between">
-          <a href="#" className="flex items-center gap-2 font-bold">
-            <Atom className="h-6 w-6 text-primary" />
-            <span className="font-headline">Digital Alchemist</span>
+          <a href="#hero" className="flex items-center gap-2 font-bold text-lg">
+            <span className="font-headline">Candra Pramudya Arunita</span>
           </a>
-          <nav className="hidden md:flex items-center gap-4 text-sm font-medium">
-            <a href="#about" className="text-muted-foreground transition-colors hover:text-foreground">About</a>
-            <a href="#skills" className="text-muted-foreground transition-colors hover:text-foreground">Skills</a>
-            <a href="#portfolio" className="text-muted-foreground transition-colors hover:text-foreground">Portfolio</a>
-            <a href="#contact" className="text-muted-foreground transition-colors hover:text-foreground">Contact</a>
+          <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+            <a href="#hero" className="text-muted-foreground transition-colors hover:text-accent">Beranda</a>
+            <a href="#tentang-saya" className="text-muted-foreground transition-colors hover:text-accent">Tentang Saya</a>
+            <a href="#keahlian" className="text-muted-foreground transition-colors hover:text-accent">Keahlian</a>
+            <a href="#karya-saya" className="text-muted-foreground transition-colors hover:text-accent">Karya Saya</a>
+            <a href="#kontak" className="text-muted-foreground transition-colors hover:text-accent">Kontak</a>
           </nav>
         </div>
       </header>
 
       <main className="flex-1">
-        <section id="hero" className="container grid place-items-center py-20 md:py-32">
-          <div className="text-center space-y-6">
+        <section id="hero" className="container grid place-items-center text-center py-24 md:py-32">
+          <div className="space-y-6 max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tighter">
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Digital Alchemist
-              </span>
+              Candra Pramudya Arunita: Inovator Digital & Penggerak Ide
             </h1>
-            <p className="max-w-xl mx-auto text-lg text-muted-foreground">
-              Transforming innovative ideas into brilliant digital experiences. I specialize in creating modern, responsive, and user-centric web applications.
+            <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
+              Saya percaya pada kekuatan ide untuk mewujudkan transformasi digital. Melalui keahlian saya dalam desain website, pengembangan bot AI, dan strategi digital, saya membantu visi Anda menjadi kenyataan.
             </p>
-            <div className="flex justify-center gap-4">
-              <Button asChild size="lg">
-                <a href="#portfolio">View My Work</a>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Button asChild size="lg" className="hover:bg-accent hover:text-accent-foreground">
+                <a href="#tentang-saya">Kenali Lebih Jauh</a>
               </Button>
-              <Button asChild variant="outline" size="lg">
-                <a href="#contact">Get in Touch</a>
+              <Button asChild variant="outline" size="lg" className="text-primary border-primary hover:bg-accent hover:text-accent-foreground hover:border-accent">
+                <a href="#kontak">Hubungi Saya</a>
               </Button>
             </div>
           </div>
         </section>
 
-        <section id="about" className="py-20 md:py-24 bg-secondary">
-          <div className="container space-y-12">
-            <div className="text-center space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">My Journey</h2>
-              <p className="text-muted-foreground md:text-xl">The story behind the craft.</p>
+        <section id="tentang-saya" className="py-20 md:py-24 bg-secondary">
+          <div className="container">
+            <div className="text-center space-y-2 mb-12">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Tentang Saya: Merangkai Ide, Merangkul Transformasi</h2>
             </div>
-            <Card className="max-w-3xl mx-auto shadow-lg">
-              <CardContent className="p-8 text-center">
-                <p className="text-lg text-muted-foreground">
-                  From a spark of curiosity to a flame of passion, my journey in the digital world has been one of continuous transformation. I believe in the alchemy of turning complex problems into simple, beautiful, and intuitive designs. Every line of code, every pixel perfected, is a step in the process of creating digital gold.
+            <div className="grid md:grid-cols-3 gap-12 items-center max-w-6xl mx-auto">
+              <div className="md:col-span-1 flex justify-center">
+                 <Image 
+                    src="https://placehold.co/400x400.png" 
+                    alt="Candra Pramudya Arunita" 
+                    width={400} 
+                    height={400} 
+                    className="rounded-full object-cover w-48 h-48 md:w-64 md:h-64 shadow-lg"
+                    data-ai-hint="professional portrait" />
+              </div>
+              <div className="md:col-span-2 space-y-4 text-muted-foreground md:text-lg">
+                <p>
+                  Halo! Saya Candra Pramudya Arunita. Perjalanan saya di dunia digital mungkin tidak dimulai dari jalur konvensional seorang programmer, melainkan dari rasa penasaran yang tak terbendung terhadap potensi teknologi. Semuanya bermula dari ketertarikan saya pada dunia kripto dan airdrop. Di sana, saya melihat bagaimana inovasi digital bisa menciptakan peluang baru yang luar biasa.
                 </p>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        <section id="skills" className="py-20 md:py-24">
-          <div className="container space-y-12">
-            <div className="text-center space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Expertise &amp; Services</h2>
-              <p className="text-muted-foreground md:text-xl">The tools and techniques in my arsenal.</p>
-            </div>
-            <div className="grid gap-8 md:grid-cols-3">
-              <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300">
-                <CardHeader>
-                  <div className="mx-auto bg-primary/10 rounded-full p-3 w-fit">
-                    <Code2 className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle className="mt-4">Web Development</CardTitle>
-                </CardHeader>
-                <CardContent className="flex flex-wrap justify-center gap-2">
-                  <Badge variant="secondary">React</Badge>
-                  <Badge variant="secondary">Next.js</Badge>
-                  <Badge variant="secondary">TypeScript</Badge>
-                  <Badge variant="secondary">Node.js</Badge>
-                  <Badge variant="secondary">Tailwind CSS</Badge>
-                </CardContent>
-              </Card>
-              <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300">
-                <CardHeader>
-                  <div className="mx-auto bg-primary/10 rounded-full p-3 w-fit">
-                    <Palette className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle className="mt-4">UI/UX Design</CardTitle>
-                </CardHeader>
-                <CardContent className="flex flex-wrap justify-center gap-2">
-                  <Badge variant="secondary">Figma</Badge>
-                  <Badge variant="secondary">User Research</Badge>
-                  <Badge variant="secondary">Prototyping</Badge>
-                  <Badge variant="secondary">Wireframing</Badge>
-                </CardContent>
-              </Card>
-              <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300">
-                <CardHeader>
-                  <div className="mx-auto bg-primary/10 rounded-full p-3 w-fit">
-                    <Search className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle className="mt-4">Digital Strategy</CardTitle>
-                </CardHeader>
-                <CardContent className="flex flex-wrap justify-center gap-2">
-                  <Badge variant="secondary">SEO</Badge>
-                  <Badge variant="secondary">Content Strategy</Badge>
-                  <Badge variant="secondary">Analytics</Badge>
-                </CardContent>
-              </Card>
+                <p>
+                  Rasa ingin tahu ini mendorong saya untuk menggali lebih dalam, dan di sinilah titik baliknya. Saya ingat betul momen ketika saya menemukan sebuah skrip Python di GitHub untuk otomasi transaksi di EVM (Ethereum Virtual Machine). Meskipun tanpa latar belakang pemrograman formal, ide untuk bisa membuat sesuatu, mengotomatisasi proses, dan menciptakan nilai dari sana benar-benar memicu semangat saya. Saya terpukau dengan konsep bahwa dengan sedikit pemahaman dan alat yang tepat, siapa pun bisa membangun sesuatu yang fungsional.
+                </p>
+                <p>
+                  Dari situlah, pintu menuju dunia pengembangan terbuka lebar. Saya menyadari bahwa saya tidak perlu menjadi seorang programmer tradisional untuk mewujudkan ide-ide digital. Dengan bantuan kecerdasan buatan (AI), batasan itu seolah lenyap. AI bukan hanya alat bantu, melainkan mitra yang memungkinkan saya, seorang pembelajar otodidak, untuk membangun website dan berbagai solusi digital yang sebelumnya hanya ada dalam imajinasi.
+                </p>
+                <p>
+                  Kini, saya berkomitmen untuk memperluas semangat inovasi ini. Saya di sini untuk membantu Anda mewujudkan visi digital Anda, sama seperti bagaimana saya mengubah rasa penasaran saya menjadi kemampuan untuk menciptakan. Mari berkolaborasi, karena saya percaya, setiap ide punya potensi untuk bertransformasi!
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        <section id="portfolio" className="py-20 md:py-24 bg-secondary">
+        <section id="keahlian" className="py-20 md:py-24">
           <div className="container space-y-12">
             <div className="text-center space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Selected Works</h2>
-              <p className="text-muted-foreground md:text-xl">A glimpse into my creative endeavors.</p>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Keahlian & Layanan Saya</h2>
+              <p className="text-muted-foreground md:text-xl max-w-2xl mx-auto">Memadukan inovasi dan teknologi untuk mewujudkan ide-ide Anda.</p>
+            </div>
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+              <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <CardHeader className="flex-grow">
+                  <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit">
+                    <Laptop className="h-8 w-8 text-primary" />
+                  </div>
+                  <CardTitle className="mt-4 text-xl">Desain & Pengembangan Website</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">Menciptakan kehadiran digital yang estetis dan fungsional untuk kebutuhan personal atau bisnis ringan Anda.</p>
+                </CardContent>
+              </Card>
+              <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <CardHeader className="flex-grow">
+                  <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit">
+                    <BotMessageSquare className="h-8 w-8 text-primary" />
+                  </div>
+                  <CardTitle className="mt-4 text-xl">Automasi Chatbot</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">Mengoptimalkan komunikasi dan layanan pelanggan melalui solusi chatbot berbasis aturan (WhatsApp & Lainnya).</p>
+                </CardContent>
+              </Card>
+              <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <CardHeader className="flex-grow">
+                  <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit">
+                    <BrainCircuit className="h-8 w-8 text-primary" />
+                  </div>
+                  <CardTitle className="mt-4 text-xl">Integrasi AI & Agen Cerdas</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">Membangun sistem cerdas yang memahami dan merespons interaksi kompleks untuk efisiensi bisnis.</p>
+                </CardContent>
+              </Card>
+              <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <CardHeader className="flex-grow">
+                  <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit">
+                    <Globe className="h-8 w-8 text-primary" />
+                  </div>
+                  <CardTitle className="mt-4 text-xl">Konsultasi Strategi Digital</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">Membantu Anda merumuskan strategi digital yang tepat untuk mewujudkan visi dan pertumbuhan Anda.</p>
+                </CardContent>
+              </Card>
+            </div>
+             <p className="text-center text-sm text-muted-foreground pt-8">*Beberapa layanan dasar tersedia dengan skema kolaborasi/syarat tertentu. Pelajari lebih lanjut di halaman detail layanan.</p>
+          </div>
+        </section>
+
+        <section id="karya-saya" className="py-20 md:py-24 bg-secondary">
+          <div className="container space-y-12">
+            <div className="text-center space-y-2">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Beberapa Karya Pilihan</h2>
+              <p className="text-muted-foreground md:text-xl max-w-2xl mx-auto">Menampilkan komitmen saya pada kualitas, kecepatan, dan estetika dalam setiap proyek yang saya kerjakan.</p>
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <Card className="overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
-                <Image src="https://placehold.co/600x400.png" alt="Portfolio item 1" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="ecommerce website" />
+                <Image src="https://placehold.co/600x400.png" alt="Website Portofolio Kreatif" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="creative portfolio" />
                 <CardHeader>
-                  <CardTitle>E-commerce Platform Redesign</CardTitle>
+                  <CardTitle>Website Portofolio Kreatif</CardTitle>
+                  <CardDescription>Desain Web</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription>A complete UI/UX overhaul for an online retailer, resulting in a 40% increase in user engagement.</CardDescription>
-                </CardContent>
               </Card>
               <Card className="overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
-                <Image src="https://placehold.co/600x400.png" alt="Portfolio item 2" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="saas dashboard" />
+                <Image src="https://placehold.co/600x400.png" alt="Bot Info Komunitas" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="ai chatbot" />
                 <CardHeader>
-                  <CardTitle>SaaS Dashboard Development</CardTitle>
+                  <CardTitle>Bot Info Komunitas</CardTitle>
+                  <CardDescription>Automasi AI</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription>Built a powerful, data-driven dashboard for a SaaS company to visualize key metrics and improve decision-making.</CardDescription>
-                </CardContent>
               </Card>
               <Card className="overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
-                <Image src="https://placehold.co/600x400.png" alt="Portfolio item 3" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="corporate website" />
+                <Image src="https://placehold.co/600x400.png" alt="Blog Edukasi Digital" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="digital blog" />
                 <CardHeader>
-                  <CardTitle>Corporate Branding &amp; Website</CardTitle>
+                  <CardTitle>Blog Edukasi Digital</CardTitle>
+                  <CardDescription>Konten & Web</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription>Developed a new brand identity and website for a tech startup, establishing a strong online presence.</CardDescription>
-                </CardContent>
               </Card>
             </div>
           </div>
         </section>
 
-        <section id="contact" className="py-20 md:py-24">
-          <div className="container">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Let's Create Together</h2>
-                <p className="text-muted-foreground text-lg">
-                  Have a project in mind or just want to say hello? I'd love to hear from you. Fill out the form, and I'll get back to you as soon as possible.
-                </p>
-                <div className="flex items-center gap-4 pt-4">
-                  <Mail className="h-6 w-6 text-primary"/>
-                  <a href="mailto:hello@digitalalchemist.dev" className="hover:text-primary transition-colors">hello@digitalalchemist.dev</a>
-                </div>
-              </div>
-              <Card className="p-8 shadow-lg">
-                <form className="space-y-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">Name</Label>
-                    <Input id="name" placeholder="Your Name" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
-                    <Input id="email" type="email" placeholder="your.email@example.com" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea id="message" placeholder="Your message..." rows={4} />
-                  </div>
-                  <Button type="submit" className="w-full hover:bg-accent hover:text-accent-foreground transition-colors">Send Message</Button>
-                </form>
-              </Card>
+        <section id="kontak" className="py-20 md:py-24">
+          <div className="container max-w-3xl mx-auto">
+            <div className="text-center space-y-4 mb-12">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Mari Berkolaborasi!</h2>
+              <p className="text-muted-foreground text-lg">
+                Punya ide menarik? Mari kita diskusikan potensi untuk mewujudkannya bersama.
+              </p>
             </div>
+            <Card className="p-8 shadow-lg">
+              <form className="space-y-4">
+                <div className="space-y-2">
+                  <Label htmlFor="name">Nama</Label>
+                  <Input id="name" placeholder="Nama Anda" />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="email">Email</Label>
+                  <Input id="email" type="email" placeholder="email.anda@contoh.com" />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="message">Pesan</Label>
+                  <Textarea id="message" placeholder="Tulis pesan Anda di sini..." rows={4} />
+                </div>
+                <Button type="submit" className="w-full hover:bg-accent hover:text-accent-foreground">Kirim Pesan</Button>
+              </form>
+            </Card>
           </div>
         </section>
       </main>
 
       <footer className="border-t">
         <div className="container py-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Digital Alchemist. All Rights Reserved.</p>
+          <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Candra Pramudya Arunita. Semua Hak Dilindungi.</p>
           <div className="flex gap-4">
             <Button variant="ghost" size="icon" asChild>
               <a href="#" aria-label="Twitter"><Twitter className="h-5 w-5" /></a>
