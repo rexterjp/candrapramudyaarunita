@@ -23,28 +23,34 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState('hero');
 
   useEffect(() => {
-    const sections = navItems.map((item) => document.getElementById(item.id));
+    const sections = navItems.map((item) => document.getElementById(item.id)).filter(Boolean);
 
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const buffer = 150; 
+      const buffer = 150;
+
+      // Special case for being at the bottom of the page
+      if (window.innerHeight + scrollY >= document.body.offsetHeight - 20) {
+        setActiveSection('kontak');
+        return;
+      }
 
       let currentSectionId = 'hero';
-
+      // Find the last section that is above the scroll position
       for (const section of sections) {
-        if (section) {
-          const sectionTop = section.offsetTop;
-          if (scrollY >= sectionTop - buffer) {
-            currentSectionId = section.id;
-          }
+        if (section && section.offsetTop <= scrollY + buffer) {
+          currentSectionId = section.id;
+        } else {
+          // Break because the rest of the sections are not in view yet
+          break;
         }
       }
-      
+
       setActiveSection(currentSectionId);
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); 
+    handleScroll(); // Initial check on load
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
