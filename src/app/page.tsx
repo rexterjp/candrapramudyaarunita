@@ -137,7 +137,7 @@ export default function Home() {
         <section id="karya-saya" className="py-20 md:py-24 bg-secondary">
           <div className="container space-y-12">
             <div className="text-center space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Beberapa Karya Pilihan</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Beberapa Karya Saya</h2>
               <p className="text-muted-foreground md:text-xl max-w-2xl mx-auto">Menampilkan komitmen saya pada kualitas, kecepatan, dan estetika dalam setiap proyek yang saya kerjakan.</p>
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -162,6 +162,11 @@ export default function Home() {
                   <CardDescription>Konten & Web</CardDescription>
                 </CardHeader>
               </Card>
+            </div>
+            <div className="text-center">
+              <Button asChild size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 transition-opacity">
+                <a href="/karya">Lihat Semua Karya</a>
+              </Button>
             </div>
           </div>
         </section>
