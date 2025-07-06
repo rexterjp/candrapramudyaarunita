@@ -80,7 +80,7 @@ export default function Home() {
                 return (
                     <a
                         key={item.id}
-                        href={item.id === 'karya-saya' ? '/karya' : `#${item.id}`}
+                        href={`#${item.id}`}
                         className={`relative transition-colors hover:text-accent ${
                             isActive
                                 ? 'text-primary font-semibold'
@@ -168,7 +168,7 @@ export default function Home() {
         </AnimatedSection>
 
         <AnimatedSection id="apa-yang-saya-lakukan" className="py-20 md:py-24">
-          <div className="container space-y-12">
+          <div className="space-y-12">
             <div className="text-center space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Ide yang Bisa Kita Wujudkan Bersama</h2>
             </div>
