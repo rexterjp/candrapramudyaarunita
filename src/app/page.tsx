@@ -80,8 +80,8 @@ export default function Home() {
         <section id="keahlian" className="py-20 md:py-24">
           <div className="container space-y-12">
             <div className="text-center space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Keahlian & Layanan Saya</h2>
-              <p className="text-muted-foreground md:text-xl max-w-2xl mx-auto">Memadukan inovasi dan teknologi untuk mewujudkan ide-ide Anda.</p>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Spesialisasi Digital Saya</h2>
+              <p className="text-muted-foreground md:text-xl max-w-3xl mx-auto">Memanfaatkan inovasi dan kekuatan AI untuk mewujudkan ide-ide digital Anda, tanpa perlu sentuhan kode.</p>
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
               <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
@@ -89,10 +89,10 @@ export default function Home() {
                   <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit">
                     <Laptop className="h-8 w-8 text-primary" />
                   </div>
-                  <CardTitle className="mt-4 text-xl">Desain & Pengembangan Website</CardTitle>
+                  <CardTitle className="mt-4 text-xl">Pembuatan Website Tanpa Kode (AI-Powered)</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">Menciptakan kehadiran digital yang estetis dan fungsional untuk kebutuhan personal atau bisnis ringan Anda.</p>
+                  <p className="text-muted-foreground">Mewujudkan website estetis dan fungsional sepenuhnya dengan bantuan AI dan Vibe Code, siap untuk kebutuhan personal atau bisnis ringan Anda.</p>
                 </CardContent>
               </Card>
               <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
@@ -100,10 +100,10 @@ export default function Home() {
                   <div className="mx-auto bg-accent/10 rounded-full p-4 w-fit">
                     <BotMessageSquare className="h-8 w-8 text-accent" />
                   </div>
-                  <CardTitle className="mt-4 text-xl">Automasi Chatbot</CardTitle>
+                  <CardTitle className="mt-4 text-xl">Automasi Chatbot Tanpa Kode</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">Mengoptimalkan komunikasi dan layanan pelanggan melalui solusi chatbot berbasis aturan (WhatsApp & Lainnya).</p>
+                  <p className="text-muted-foreground">Mengoptimalkan komunikasi dan layanan pelanggan melalui penerapan chatbot cerdas berbasis AI, tanpa perlu pemrograman kompleks.</p>
                 </CardContent>
               </Card>
               <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
@@ -111,10 +111,10 @@ export default function Home() {
                   <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit">
                     <BrainCircuit className="h-8 w-8 text-primary" />
                   </div>
-                  <CardTitle className="mt-4 text-xl">Integrasi AI & Agen Cerdas</CardTitle>
+                  <CardTitle className="mt-4 text-xl">Penerapan Solusi AI untuk Efisiensi</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">Membangun sistem cerdas yang memahami dan merespons interaksi kompleks untuk efisiensi bisnis.</p>
+                  <p className="text-muted-foreground">Membantu Anda menerapkan dan mengintegrasikan solusi AI untuk meningkatkan efisiensi dan potensi digital bisnis Anda, sepenuhnya tanpa coding</p>
                 </CardContent>
               </Card>
               <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
@@ -165,7 +165,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="kontak" className="py-20 md:py-24 bg-secondary">
+        <section id="kontak" className="py-20 md:py-24 bg-white">
           <div className="container max-w-6xl mx-auto">
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Mari Terhubung</h2>
