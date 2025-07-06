@@ -4,7 +4,7 @@ import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/com
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { Github, Linkedin, Twitter, Laptop, BotMessageSquare, BrainCircuit, Globe } from 'lucide-react';
+import { Github, Linkedin, Twitter, Laptop, BotMessageSquare, BrainCircuit, Globe, Mail, Phone } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -165,48 +165,99 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="kontak" className="py-20 md:py-24">
-          <div className="container max-w-3xl mx-auto">
-            <div className="text-center space-y-4 mb-12">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Mari Berkolaborasi!</h2>
-              <p className="text-muted-foreground text-lg">
-                Punya ide menarik? Mari kita diskusikan potensi untuk mewujudkannya bersama.
+        <section id="kontak" className="py-20 md:py-24 bg-secondary">
+          <div className="container max-w-6xl mx-auto">
+            <div className="text-center space-y-4 mb-16">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Mari Terhubung</h2>
+              <p className="text-muted-foreground md:text-xl max-w-3xl mx-auto">
+                Punya pertanyaan, ide proyek, atau hanya ingin menyapa? Jangan ragu untuk terhubung.
               </p>
             </div>
-            <Card className="p-8 shadow-lg">
+            <div className="grid md:grid-cols-2 gap-16 items-start">
+              <div className="space-y-6">
+                <h3 className="text-2xl font-semibold">Informasi Kontak</h3>
+                <p className="text-muted-foreground">Hubungi melalui kanal berikut. Jangan ragu untuk mengirim pesan.</p>
+                <div className="space-y-4">
+                  <a href="mailto:halo@candrapmu.com" className="flex items-center gap-4 group">
+                    <div className="p-3 bg-primary/10 rounded-md group-hover:bg-primary/20 transition-colors">
+                      <Mail className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <p className="font-semibold">Email</p>
+                      <p className="text-muted-foreground group-hover:text-primary transition-colors">halo@candrapmu.com</p>
+                    </div>
+                  </a>
+                  <a href="https://wa.me/628123456789" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+                    <div className="p-3 bg-primary/10 rounded-md group-hover:bg-primary/20 transition-colors">
+                      <Phone className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <p className="font-semibold">WhatsApp</p>
+                      <p className="text-muted-foreground group-hover:text-primary transition-colors">Chat di WhatsApp</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
               <form className="space-y-4">
-                <div className="space-y-2">
-                  <Label htmlFor="name">Nama</Label>
-                  <Input id="name" placeholder="Nama Anda" />
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="name">Nama Anda</Label>
+                    <Input id="name" placeholder="Nama Anda" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="email">Email Anda</Label>
+                    <Input id="email" type="email" placeholder="email.anda@contoh.com" />
+                  </div>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="email.anda@contoh.com" />
+                  <Label htmlFor="subject">Subjek</Label>
+                  <Input id="subject" placeholder="Perihal pesan Anda" />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="message">Pesan</Label>
-                  <Textarea id="message" placeholder="Tulis pesan Anda di sini..." rows={4} />
+                  <Label htmlFor="message">Pesan Anda</Label>
+                  <Textarea id="message" placeholder="Tulis pesan Anda di sini..." rows={5} />
                 </div>
-                <Button type="submit" className="w-full hover:bg-accent hover:text-accent-foreground">Kirim Pesan</Button>
+                <Button type="submit" size="lg" className="w-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 transition-opacity">
+                  Kirim Pesan
+                </Button>
               </form>
-            </Card>
+            </div>
           </div>
         </section>
       </main>
 
-      <footer className="border-t">
-        <div className="container py-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Candra Pramudya Arunita. Semua Hak Dilindungi.</p>
-          <div className="flex gap-4">
-            <Button variant="ghost" size="icon" asChild>
-              <a href="#" aria-label="Twitter"><Twitter className="h-5 w-5" /></a>
-            </Button>
-            <Button variant="ghost" size="icon" asChild>
-              <a href="#" aria-label="GitHub"><Github className="h-5 w-5" /></a>
-            </Button>
-            <Button variant="ghost" size="icon" asChild>
-              <a href="#" aria-label="LinkedIn"><Linkedin className="h-5 w-5" /></a>
-            </Button>
+      <footer className="bg-gray-900 text-gray-400">
+        <div className="container py-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <div className="space-y-2 flex flex-col items-center md:items-start">
+              <a href="#hero" className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Candra Pramudya Arunita
+              </a>
+              <p className="text-sm max-w-xs">
+                Inovator Digital & Penggerak Ide, membantu visi Anda menjadi kenyataan.
+              </p>
+            </div>
+            <div className="flex justify-center items-center">
+              <div className="flex gap-2">
+                <Button variant="ghost" size="icon" asChild className="text-gray-400 hover:text-white rounded-full">
+                  <a href="#" aria-label="Twitter"><Twitter className="h-5 w-5" /></a>
+                </Button>
+                <Button variant="ghost" size="icon" asChild className="text-gray-400 hover:text-white rounded-full">
+                  <a href="#" aria-label="GitHub"><Github className="h-5 w-5" /></a>
+                </Button>
+                <Button variant="ghost" size="icon" asChild className="text-gray-400 hover:text-white rounded-full">
+                  <a href="#" aria-label="LinkedIn"><Linkedin className="h-5 w-5" /></a>
+                </Button>
+              </div>
+            </div>
+            <div className="text-sm flex flex-col items-center md:items-end">
+              <p>&copy; {new Date().getFullYear()} Candra Pramudya Arunita.</p>
+              <p>Semua Hak Dilindungi.</p>
+              <div className="flex gap-4 mt-2">
+                <a href="#" className="hover:text-white">Privacy Policy</a>
+                <a href="#" className="hover:text-white">Terms of Service</a>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
