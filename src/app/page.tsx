@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Github, Linkedin, Twitter, Laptop, BotMessageSquare, BrainCircuit, Globe, Mail, Phone } from 'lucide-react';
+import { AnimatedSection } from '@/components/animated-section';
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
       </header>
 
       <main className="flex-1">
-        <section id="hero" className="container grid min-h-dvh place-items-center text-center">
+        <AnimatedSection id="hero" className="container grid min-h-dvh place-items-center text-center">
           <div className="space-y-6 max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tighter bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Candra Pramudya Arunita: Inovator Digital & Penggerak Ide
@@ -43,9 +44,9 @@ export default function Home() {
               </Button>
             </div>
           </div>
-        </section>
+        </AnimatedSection>
 
-        <section id="tentang-saya" className="py-20 md:py-24 bg-secondary">
+        <AnimatedSection id="tentang-saya" className="py-20 md:py-24 bg-secondary">
           <div className="container">
             <div className="text-center space-y-2 mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Tentang Saya: Merangkai Ide, Merangkul Transformasi</h2>
@@ -76,9 +77,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </AnimatedSection>
 
-        <section id="apa-yang-saya-lakukan" className="py-20 md:py-24">
+        <AnimatedSection id="apa-yang-saya-lakukan" className="py-20 md:py-24">
           <div className="container space-y-12">
             <div className="text-center space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Ide yang Bisa Kita Wujudkan Bersama</h2>
@@ -132,9 +133,9 @@ export default function Home() {
             </div>
              <p className="text-center text-sm text-muted-foreground pt-8">*Beberapa layanan dasar tersedia dengan skema kolaborasi/syarat tertentu. Pelajari lebih lanjut di halaman detail layanan.</p>
           </div>
-        </section>
+        </AnimatedSection>
 
-        <section id="karya-saya" className="py-20 md:py-24 bg-secondary">
+        <AnimatedSection id="karya-saya" className="py-20 md:py-24 bg-secondary">
           <div className="container space-y-12">
             <div className="text-center space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Beberapa Karya Saya</h2>
@@ -169,9 +170,9 @@ export default function Home() {
               </Button>
             </div>
           </div>
-        </section>
+        </AnimatedSection>
 
-        <section id="kontak" className="py-20 md:py-24 bg-white">
+        <AnimatedSection id="kontak" className="py-20 md:py-24 bg-white">
           <div className="container max-w-6xl mx-auto">
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Mari Terhubung</h2>
@@ -229,7 +230,7 @@ export default function Home() {
               </form>
             </div>
           </div>
-        </section>
+        </AnimatedSection>
       </main>
 
       <footer className="bg-gray-900 text-gray-400">
