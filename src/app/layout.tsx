@@ -2,7 +2,7 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Candra Pramudya Arunita - Inovator Digital',
+  title: 'Candra Pramudya Arunita: Inovator Digital & Penggerak Ide',
   description: 'Situs personal Candra Pramudya Arunita, seorang inovator digital dan penggerak ide.',
 };
 

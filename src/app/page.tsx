@@ -27,7 +27,7 @@ export default function Home() {
       <main className="flex-1">
         <section id="hero" className="container grid place-items-center text-center py-24 md:py-32">
           <div className="space-y-6 max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tighter">
+            <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tighter bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Candra Pramudya Arunita: Inovator Digital & Penggerak Ide
             </h1>
             <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
@@ -97,8 +97,8 @@ export default function Home() {
               </Card>
               <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
                 <CardHeader className="flex-grow">
-                  <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit">
-                    <BotMessageSquare className="h-8 w-8 text-primary" />
+                  <div className="mx-auto bg-accent/10 rounded-full p-4 w-fit">
+                    <BotMessageSquare className="h-8 w-8 text-accent" />
                   </div>
                   <CardTitle className="mt-4 text-xl">Automasi Chatbot</CardTitle>
                 </CardHeader>
@@ -119,8 +119,8 @@ export default function Home() {
               </Card>
               <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
                 <CardHeader className="flex-grow">
-                  <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit">
-                    <Globe className="h-8 w-8 text-primary" />
+                  <div className="mx-auto bg-accent/10 rounded-full p-4 w-fit">
+                    <Globe className="h-8 w-8 text-accent" />
                   </div>
                   <CardTitle className="mt-4 text-xl">Konsultasi Strategi Digital</CardTitle>
                 </CardHeader>
