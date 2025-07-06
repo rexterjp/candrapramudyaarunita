@@ -8,6 +8,7 @@ import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/com
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
+import { Progress } from '@/components/ui/progress';
 import { Github, Linkedin, Twitter, Laptop, BotMessageSquare, BrainCircuit, Globe, Mail, Phone } from 'lucide-react';
 import { AnimatedSection } from '@/components/animated-section';
 
@@ -17,6 +18,14 @@ const navItems = [
     { id: 'apa-yang-saya-lakukan', label: 'Apa yang Saya Lakukan' },
     { id: 'karya-saya', label: 'Karya Saya' },
     { id: 'kontak', label: 'Kontak' },
+];
+
+const skills = [
+  { name: 'Ngopi', value: 100 },
+  { name: 'Belajar Hal Baru', value: 99 },
+  { name: 'Mewujudkan Ide', value: 90 },
+  { name: 'Nge-scroll Inspirasi', value: 88 },
+  { name: 'Begadang', value: 100 },
 ];
 
 export default function Home() {
@@ -70,7 +79,7 @@ export default function Home() {
                 return (
                     <a
                         key={item.id}
-                        href={`#${item.id}`}
+                        href={item.id === 'karya-saya' ? '/karya' : `#${item.id}`}
                         className={`relative transition-colors hover:text-accent ${
                             isActive
                                 ? 'text-primary font-semibold'
@@ -138,6 +147,22 @@ export default function Home() {
                 </p>
               </div>
             </div>
+            
+            <div className="max-w-4xl mx-auto mt-20 text-center">
+              <h3 className="text-2xl sm:text-3xl font-bold tracking-tighter font-headline mb-8">Skill Utama Saya</h3>
+              <div className="space-y-6">
+                {skills.map((skill) => (
+                  <div key={skill.name} className="text-left">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="font-medium text-foreground">{skill.name}</span>
+                      <span className="text-sm font-semibold text-primary">{skill.value}%</span>
+                    </div>
+                    <Progress value={skill.value} className="h-3" />
+                  </div>
+                ))}
+              </div>
+            </div>
+
           </div>
         </AnimatedSection>
 
@@ -145,7 +170,6 @@ export default function Home() {
           <div className="container space-y-12">
             <div className="text-center space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Ide yang Bisa Kita Wujudkan Bersama</h2>
-              <p className="text-muted-foreground md:text-xl max-w-3xl mx-auto">Memanfaatkan inovasi dan kekuatan AI untuk mewujudkan ide-ide digital Anda, tanpa perlu sentuhan kode.</p>
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
               <Card className="text-center flex flex-col">
