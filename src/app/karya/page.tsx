@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Github, Linkedin, Twitter } from 'lucide-react';
+import { AnimatedSection } from '@/components/animated-section';
 
 export default function KaryaPage() {
   return (
@@ -23,7 +24,7 @@ export default function KaryaPage() {
       </header>
 
       <main className="flex-1">
-        <section id="karya" className="py-20 md:py-24 bg-secondary">
+        <AnimatedSection id="karya" className="py-20 md:py-24 bg-secondary">
           <div className="container space-y-12">
             <div className="text-center space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Semua Karya Saya</h2>
@@ -74,7 +75,7 @@ export default function KaryaPage() {
               </Card>
             </div>
           </div>
-        </section>
+        </AnimatedSection>
       </main>
 
       <footer className="bg-gray-900 text-gray-400">
