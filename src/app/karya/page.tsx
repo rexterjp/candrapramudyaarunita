@@ -4,7 +4,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, Twitter, ArrowLeft } from 'lucide-react';
 import { AnimatedSection } from '@/components/animated-section';
 
 export default function KaryaPage() {
@@ -79,6 +79,14 @@ export default function KaryaPage() {
                   <CardDescription>Visualisasi Data</CardDescription>
                 </CardHeader>
               </Card>
+            </div>
+            <div className="text-center">
+              <Button asChild size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-lg transition-all duration-300 hover:scale-105">
+                <a href="/">
+                  <ArrowLeft className="mr-2 h-5 w-5" />
+                  Kembali ke Beranda
+                </a>
+              </Button>
             </div>
           </div>
         </AnimatedSection>
