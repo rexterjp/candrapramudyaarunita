@@ -11,7 +11,7 @@ import { Label } from '@/components/ui/label';
 import { Progress } from '@/components/ui/progress';
 import { Github, Linkedin, Twitter, Laptop, BotMessageSquare, BrainCircuit, Globe, Mail, Phone, Layers, FileText, Menu } from 'lucide-react';
 import { AnimatedSection } from '@/components/animated-section';
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetHeader, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 
 const navItems = [
     { id: 'hero', label: 'Beranda' },
@@ -105,6 +105,10 @@ export default function Home() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right">
+                <SheetHeader>
+                  <SheetTitle className="sr-only">Menu</SheetTitle>
+                  <SheetDescription className="sr-only">Navigasi utama situs.</SheetDescription>
+                </SheetHeader>
                 <nav className="flex flex-col gap-6 text-lg font-medium mt-8">
                   {navItems.map((item) => (
                     <SheetClose asChild key={item.id}>

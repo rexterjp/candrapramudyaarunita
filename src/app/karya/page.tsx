@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Github, Linkedin, Twitter, Menu } from 'lucide-react';
 import { AnimatedSection } from '@/components/animated-section';
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetHeader, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 
 export default function KaryaPage() {
   return (
@@ -36,6 +36,10 @@ export default function KaryaPage() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right">
+                <SheetHeader>
+                  <SheetTitle className="sr-only">Menu</SheetTitle>
+                  <SheetDescription className="sr-only">Navigasi utama situs.</SheetDescription>
+                </SheetHeader>
                 <nav className="flex flex-col gap-6 text-lg font-medium mt-8">
                   <SheetClose asChild>
                     <a href="/" className="text-muted-foreground hover:text-primary">Beranda</a>
