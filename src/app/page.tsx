@@ -36,10 +36,10 @@ export default function Home() {
               Saya percaya pada kekuatan ide untuk mewujudkan transformasi digital. Dengan pemanfaatan alat AI dan Vibe Code untuk desain website, pengembangan bot, dan strategi digital, saya membantu visi Anda menjadi kenyataan.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button asChild size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 transition-opacity">
+              <Button asChild size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-lg transition-all duration-300 hover:scale-105">
                 <a href="#tentang-saya">Kenali Lebih Jauh</a>
               </Button>
-              <Button asChild variant="outline" size="lg" className="text-primary border-primary hover:bg-accent hover:text-accent-foreground hover:border-accent">
+              <Button asChild variant="outline" size="lg" className="text-primary border-primary hover:bg-accent hover:text-accent-foreground hover:border-accent hover:shadow-lg transition-all duration-300 hover:scale-105">
                 <a href="#kontak">Hubungi Saya</a>
               </Button>
             </div>
@@ -165,7 +165,7 @@ export default function Home() {
               </Card>
             </div>
             <div className="text-center">
-              <Button asChild size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 transition-opacity">
+              <Button asChild size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-lg transition-all duration-300 hover:scale-105">
                 <a href="/karya">Lihat Semua Karya</a>
               </Button>
             </div>
@@ -224,7 +224,7 @@ export default function Home() {
                   <Label htmlFor="message">Pesan Anda</Label>
                   <Textarea id="message" placeholder="Tulis pesan Anda di sini..." rows={5} />
                 </div>
-                <Button type="submit" size="lg" className="w-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 transition-opacity">
+                <Button type="submit" size="lg" className="w-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-lg transition-all duration-300 hover:scale-105">
                   Kirim Pesan
                 </Button>
               </form>
