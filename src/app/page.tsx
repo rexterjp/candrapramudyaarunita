@@ -53,7 +53,7 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-12 items-center max-w-6xl mx-auto">
               <div className="md:col-span-1 flex justify-center">
                  <Image 
-                    src="https://placehold.co/400x400.png" 
+                    src="https://i.ibb.co/ycVMpB12/c.png" 
                     alt="Candra Pramudya Arunita" 
                     width={400} 
                     height={400} 
