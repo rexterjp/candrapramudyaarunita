@@ -32,7 +32,7 @@ export default function Home() {
               Candra Pramudya Arunita: Inovator Digital & Penggerak Ide
             </h1>
             <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
-              Saya percaya pada kekuatan ide untuk mewujudkan transformasi digital. Melalui keahlian saya dalam desain website, pengembangan bot AI, dan strategi digital, saya membantu visi Anda menjadi kenyataan.
+              Saya percaya pada kekuatan ide untuk mewujudkan transformasi digital. Dengan pemanfaatan alat AI dan Vibe Code untuk desain website, pengembangan bot, dan strategi digital, saya membantu visi Anda menjadi kenyataan.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button asChild size="lg" className="hover:bg-accent hover:text-accent-foreground">
