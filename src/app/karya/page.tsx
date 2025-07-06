@@ -15,17 +15,12 @@ export default function KaryaPage() {
           <a href="/" className="flex items-center gap-2 font-bold text-lg">
             <span className="font-headline">Candra Pramudya Arunita</span>
           </a>
-          <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-            <a href="/" className="text-muted-foreground transition-colors hover:text-accent">Beranda</a>
-            <a href="/#tentang-saya" className="text-muted-foreground transition-colors hover:text-accent">Tentang Saya</a>
-            <a href="/#apa-yang-saya-lakukan" className="text-muted-foreground transition-colors hover:text-accent">Apa yang Saya Lakukan</a>
-            <a href="/#mitra-ai" className="text-muted-foreground transition-colors hover:text-accent">Mitra AI Saya</a>
-            <a href="/karya" className="relative text-primary font-semibold">
-              Karya Saya
-              <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-gradient-to-r from-primary to-accent"></span>
+          <Button asChild variant="outline">
+            <a href="/">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Kembali
             </a>
-            <a href="/#kontak" className="text-muted-foreground transition-colors hover:text-accent">Kontak</a>
-          </nav>
+          </Button>
         </div>
       </header>
 
@@ -79,14 +74,6 @@ export default function KaryaPage() {
                   <CardDescription>Visualisasi Data</CardDescription>
                 </CardHeader>
               </Card>
-            </div>
-            <div className="text-center">
-              <Button asChild size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-lg transition-all duration-300 hover:scale-105">
-                <a href="/">
-                  <ArrowLeft className="mr-2 h-5 w-5" />
-                  Kembali ke Beranda
-                </a>
-              </Button>
             </div>
           </div>
         </AnimatedSection>
