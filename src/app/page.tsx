@@ -77,17 +77,6 @@ export default function Home() {
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
             {navItems.map((item) => {
                 const isActive = activeSection === item.id;
-                if (item.id === 'karya-saya') {
-                    return (
-                         <a
-                            key={item.id}
-                            href="/karya"
-                            className={`relative transition-colors hover:text-accent text-muted-foreground`}
-                        >
-                            Karya Saya
-                        </a>
-                    )
-                }
                 return (
                     <a
                         key={item.id}
@@ -178,7 +167,7 @@ export default function Home() {
           </div>
         </AnimatedSection>
 
-        <AnimatedSection id="apa-yang-saya-lakukan" className="py-20 md:py-24 bg-secondary">
+        <AnimatedSection id="apa-yang-saya-lakukan" className="py-20 md:py-24">
           <div className="container">
             <div className="space-y-12">
               <div className="text-center space-y-2">
