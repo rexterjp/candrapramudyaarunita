@@ -31,6 +31,7 @@ const skills = [
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('hero');
+  const [startProgressAnimation, setStartProgressAnimation] = useState(false);
 
   useEffect(() => {
     const sections = navItems.map((item) => document.getElementById(item.id)).filter(Boolean);
@@ -39,19 +40,16 @@ export default function Home() {
       const scrollY = window.scrollY;
       const buffer = 150;
 
-      // Special case for being at the bottom of the page
       if (window.innerHeight + scrollY >= document.body.offsetHeight - 20) {
         setActiveSection('kontak');
         return;
       }
 
       let currentSectionId = 'hero';
-      // Find the last section that is above the scroll position
       for (const section of sections) {
         if (section && section.offsetTop <= scrollY + buffer) {
           currentSectionId = section.id;
         } else {
-          // Break because the rest of the sections are not in view yet
           break;
         }
       }
@@ -60,10 +58,13 @@ export default function Home() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initial check on load
+    handleScroll(); 
+
+    const animationTimer = setTimeout(() => setStartProgressAnimation(true), 100);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      clearTimeout(animationTimer);
     };
   }, []);
 
@@ -77,10 +78,12 @@ export default function Home() {
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
             {navItems.map((item) => {
                 const isActive = activeSection === item.id;
+                const isKaryaLink = item.id === 'karya-saya';
+                const href = isKaryaLink ? '/karya' : `#${item.id}`;
                 return (
                     <a
                         key={item.id}
-                        href={`#${item.id}`}
+                        href={href}
                         className={`relative transition-colors hover:text-accent ${
                             isActive
                                 ? 'text-primary font-semibold'
@@ -88,7 +91,7 @@ export default function Home() {
                         }`}
                     >
                         {item.label}
-                        {isActive && (
+                        {isActive && !isKaryaLink &&(
                             <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-gradient-to-r from-primary to-accent"></span>
                         )}
                     </a>
@@ -143,7 +146,7 @@ export default function Home() {
                           <span className="font-medium text-foreground">{skill.name}</span>
                           <span className="text-sm font-semibold text-primary">{skill.value}%</span>
                         </div>
-                        <Progress value={skill.value} className="h-3" />
+                        <Progress value={startProgressAnimation ? skill.value : 0} className="h-3" />
                       </div>
                     ))}
                   </div>
