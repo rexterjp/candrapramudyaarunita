@@ -86,7 +86,7 @@ export default function Home() {
               <p className="text-muted-foreground md:text-xl max-w-3xl mx-auto">Memanfaatkan inovasi dan kekuatan AI untuk mewujudkan ide-ide digital Anda, tanpa perlu sentuhan kode.</p>
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
-              <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+              <Card className="text-center flex flex-col">
                 <CardHeader className="flex-grow">
                   <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit">
                     <Laptop className="h-8 w-8 text-primary" />
@@ -97,7 +97,7 @@ export default function Home() {
                   <p className="text-muted-foreground">Mewujudkan website estetis dan fungsional untuk tahap awal atau kebutuhan dasar Anda, sepenuhnya dengan bantuan AI dan Vibe Code.</p>
                 </CardContent>
               </Card>
-              <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+              <Card className="text-center flex flex-col">
                 <CardHeader className="flex-grow">
                   <div className="mx-auto bg-accent/10 rounded-full p-4 w-fit">
                     <BotMessageSquare className="h-8 w-8 text-accent" />
@@ -108,7 +108,7 @@ export default function Home() {
                   <p className="text-muted-foreground">Mengoptimalkan komunikasi dasar dan layanan pelanggan melalui penerapan chatbot cerdas berbasis AI, tanpa perlu pemrograman kompleks.</p>
                 </CardContent>
               </Card>
-              <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+              <Card className="text-center flex flex-col">
                 <CardHeader className="flex-grow">
                   <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit">
                     <BrainCircuit className="h-8 w-8 text-primary" />
@@ -119,7 +119,7 @@ export default function Home() {
                   <p className="text-muted-foreground">Membantu Anda menerapkan dan mengintegrasikan solusi AI sederhana untuk meningkatkan efisiensi digital bisnis Anda, sepenuhnya tanpa coding.</p>
                 </CardContent>
               </Card>
-              <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+              <Card className="text-center flex flex-col">
                 <CardHeader className="flex-grow">
                   <div className="mx-auto bg-accent/10 rounded-full p-4 w-fit">
                     <Globe className="h-8 w-8 text-accent" />
@@ -142,21 +142,21 @@ export default function Home() {
               <p className="text-muted-foreground md:text-xl max-w-2xl mx-auto">Menampilkan komitmen saya pada kualitas, kecepatan, dan estetika dalam setiap proyek yang saya kerjakan.</p>
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <Card className="overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
+              <Card className="overflow-hidden group">
                 <Image src="https://placehold.co/600x400.png" alt="Website Portofolio Kreatif" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="creative portfolio" />
                 <CardHeader>
                   <CardTitle>Website Portofolio Kreatif</CardTitle>
                   <CardDescription>Desain Web</CardDescription>
                 </CardHeader>
               </Card>
-              <Card className="overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
+              <Card className="overflow-hidden group">
                 <Image src="https://placehold.co/600x400.png" alt="Bot Info Komunitas" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="ai chatbot" />
                 <CardHeader>
                   <CardTitle>Bot Info Komunitas</CardTitle>
                   <CardDescription>Automasi AI</CardDescription>
                 </CardHeader>
               </Card>
-              <Card className="overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
+              <Card className="overflow-hidden group">
                 <Image src="https://placehold.co/600x400.png" alt="Blog Edukasi Digital" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="digital blog" />
                 <CardHeader>
                   <CardTitle>Blog Edukasi Digital</CardTitle>

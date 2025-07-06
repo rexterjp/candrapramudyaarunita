@@ -30,42 +30,42 @@ export default function KaryaPage() {
               <p className="text-muted-foreground md:text-xl max-w-2xl mx-auto">Berikut adalah kumpulan proyek yang telah saya kerjakan, menunjukkan komitmen pada kualitas dan inovasi.</p>
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <Card className="overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
+              <Card className="overflow-hidden group">
                 <Image src="https://placehold.co/600x400.png" alt="Website Portofolio Kreatif" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="creative portfolio" />
                 <CardHeader>
                   <CardTitle>Website Portofolio Kreatif</CardTitle>
                   <CardDescription>Desain Web</CardDescription>
                 </CardHeader>
               </Card>
-              <Card className="overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
+              <Card className="overflow-hidden group">
                 <Image src="https://placehold.co/600x400.png" alt="Bot Info Komunitas" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="ai chatbot" />
                 <CardHeader>
                   <CardTitle>Bot Info Komunitas</CardTitle>
                   <CardDescription>Automasi AI</CardDescription>
                 </CardHeader>
               </Card>
-              <Card className="overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
+              <Card className="overflow-hidden group">
                 <Image src="https://placehold.co/600x400.png" alt="Blog Edukasi Digital" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="digital blog" />
                 <CardHeader>
                   <CardTitle>Blog Edukasi Digital</CardTitle>
                   <CardDescription>Konten & Web</CardDescription>
                 </CardHeader>
               </Card>
-               <Card className="overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
+               <Card className="overflow-hidden group">
                 <Image src="https://placehold.co/600x400.png" alt="Aplikasi Web E-commerce" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="web application" />
                 <CardHeader>
                   <CardTitle>Aplikasi Web E-commerce</CardTitle>
                   <CardDescription>Pengembangan Web</CardDescription>
                 </CardHeader>
               </Card>
-              <Card className="overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
+              <Card className="overflow-hidden group">
                 <Image src="https://placehold.co/600x400.png" alt="Desain Aplikasi Mobile" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="mobile app" />
                 <CardHeader>
                   <CardTitle>Desain Aplikasi Mobile</CardTitle>
                   <CardDescription>UI/UX Desain</CardDescription>
                 </CardHeader>
               </Card>
-              <Card className="overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
+              <Card className="overflow-hidden group">
                 <Image src="https://placehold.co/600x400.png" alt="Dashboard Analitik" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="data visualization" />
                 <CardHeader>
                   <CardTitle>Dashboard Analitik</CardTitle>
