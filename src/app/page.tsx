@@ -26,7 +26,7 @@ export default function Home() {
       </header>
 
       <main className="flex-1">
-        <section id="hero" className="container grid place-items-center text-center py-24 md:py-32">
+        <section id="hero" className="container grid min-h-dvh place-items-center text-center">
           <div className="space-y-6 max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tighter bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Candra Pramudya Arunita: Inovator Digital & Penggerak Ide
@@ -50,8 +50,8 @@ export default function Home() {
             <div className="text-center space-y-2 mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Tentang Saya: Merangkai Ide, Merangkul Transformasi</h2>
             </div>
-            <div className="grid md:grid-cols-3 gap-12 items-center max-w-6xl mx-auto">
-              <div className="md:col-span-1 flex justify-center">
+            <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div className="flex justify-center">
                  <Image 
                     src="https://i.ibb.co/9k0LFhhD/cv.jpg" 
                     alt="Candra Pramudya Arunita" 
@@ -60,7 +60,7 @@ export default function Home() {
                     className="rounded-full object-cover w-48 h-48 md:w-64 md:h-64 shadow-lg"
                     data-ai-hint="professional portrait" />
               </div>
-              <div className="md:col-span-2 space-y-4 text-muted-foreground md:text-lg">
+              <div className="space-y-4 text-muted-foreground md:text-lg">
                 <p>
                   Halo! Saya Candra Pramudya Arunita. Perjalanan saya di dunia digital mungkin tidak dimulai dari jalur konvensional seorang programmer, melainkan dari rasa penasaran yang tak terbendung terhadap potensi teknologi. Semuanya bermula dari ketertarikan saya pada dunia kripto dan airdrop. Di sana, saya melihat bagaimana inovasi digital bisa menciptakan peluang baru yang luar biasa.
                 </p>
