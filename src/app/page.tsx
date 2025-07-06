@@ -1,4 +1,7 @@
 
+"use client";
+
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/components/ui/card';
@@ -8,7 +11,46 @@ import { Label } from '@/components/ui/label';
 import { Github, Linkedin, Twitter, Laptop, BotMessageSquare, BrainCircuit, Globe, Mail, Phone } from 'lucide-react';
 import { AnimatedSection } from '@/components/animated-section';
 
+const navItems = [
+    { id: 'hero', label: 'Beranda' },
+    { id: 'tentang-saya', label: 'Tentang Saya' },
+    { id: 'apa-yang-saya-lakukan', label: 'Apa yang Saya Lakukan' },
+    { id: 'karya-saya', label: 'Karya Saya' },
+    { id: 'kontak', label: 'Kontak' },
+];
+
 export default function Home() {
+  const [activeSection, setActiveSection] = useState('hero');
+
+  useEffect(() => {
+    const sections = navItems.map((item) => document.getElementById(item.id));
+
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const buffer = 150; 
+
+      let currentSectionId = 'hero';
+
+      for (const section of sections) {
+        if (section) {
+          const sectionTop = section.offsetTop;
+          if (scrollY >= sectionTop - buffer) {
+            currentSectionId = section.id;
+          }
+        }
+      }
+      
+      setActiveSection(currentSectionId);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); 
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="flex flex-col min-h-dvh bg-background font-body text-foreground">
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -17,14 +59,25 @@ export default function Home() {
             <span className="font-headline">Candra Pramudya Arunita</span>
           </a>
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-            <a href="#hero" className="relative text-primary font-semibold">
-              Beranda
-              <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-gradient-to-r from-primary to-accent"></span>
-            </a>
-            <a href="#tentang-saya" className="text-muted-foreground transition-colors hover:text-accent">Tentang Saya</a>
-            <a href="#apa-yang-saya-lakukan" className="text-muted-foreground transition-colors hover:text-accent">Apa yang Saya Lakukan</a>
-            <a href="#karya-saya" className="text-muted-foreground transition-colors hover:text-accent">Karya Saya</a>
-            <a href="#kontak" className="text-muted-foreground transition-colors hover:text-accent">Kontak</a>
+            {navItems.map((item) => {
+                const isActive = activeSection === item.id;
+                return (
+                    <a
+                        key={item.id}
+                        href={`#${item.id}`}
+                        className={`relative transition-colors hover:text-accent ${
+                            isActive
+                                ? 'text-primary font-semibold'
+                                : 'text-muted-foreground'
+                        }`}
+                    >
+                        {item.label}
+                        {isActive && (
+                            <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-gradient-to-r from-primary to-accent"></span>
+                        )}
+                    </a>
+                );
+            })}
           </nav>
         </div>
       </header>
