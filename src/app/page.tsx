@@ -17,7 +17,10 @@ export default function Home() {
             <span className="font-headline">Candra Pramudya Arunita</span>
           </a>
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-            <a href="#hero" className="text-muted-foreground transition-colors hover:text-accent">Beranda</a>
+            <a href="#hero" className="relative text-primary font-semibold">
+              Beranda
+              <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-gradient-to-r from-primary to-accent"></span>
+            </a>
             <a href="#tentang-saya" className="text-muted-foreground transition-colors hover:text-accent">Tentang Saya</a>
             <a href="#apa-yang-saya-lakukan" className="text-muted-foreground transition-colors hover:text-accent">Apa yang Saya Lakukan</a>
             <a href="#karya-saya" className="text-muted-foreground transition-colors hover:text-accent">Karya Saya</a>

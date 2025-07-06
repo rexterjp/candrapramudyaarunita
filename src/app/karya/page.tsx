@@ -17,7 +17,10 @@ export default function KaryaPage() {
             <a href="/" className="text-muted-foreground transition-colors hover:text-accent">Beranda</a>
             <a href="/#tentang-saya" className="text-muted-foreground transition-colors hover:text-accent">Tentang Saya</a>
             <a href="/#apa-yang-saya-lakukan" className="text-muted-foreground transition-colors hover:text-accent">Apa yang Saya Lakukan</a>
-            <a href="/karya" className="text-accent font-semibold">Karya Saya</a>
+            <a href="/karya" className="relative text-primary font-semibold">
+              Karya Saya
+              <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-gradient-to-r from-primary to-accent"></span>
+            </a>
             <a href="/#kontak" className="text-muted-foreground transition-colors hover:text-accent">Kontak</a>
           </nav>
         </div>
