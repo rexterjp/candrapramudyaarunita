@@ -1,9 +1,12 @@
 
+"use client";
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, Twitter, Menu } from 'lucide-react';
 import { AnimatedSection } from '@/components/animated-section';
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 
 export default function KaryaPage() {
   return (
@@ -17,12 +20,45 @@ export default function KaryaPage() {
             <a href="/" className="text-muted-foreground transition-colors hover:text-accent">Beranda</a>
             <a href="/#tentang-saya" className="text-muted-foreground transition-colors hover:text-accent">Tentang Saya</a>
             <a href="/#apa-yang-saya-lakukan" className="text-muted-foreground transition-colors hover:text-accent">Apa yang Saya Lakukan</a>
+            <a href="/#mitra-ai" className="text-muted-foreground transition-colors hover:text-accent">Mitra AI Saya</a>
             <a href="/karya" className="relative text-primary font-semibold">
               Karya Saya
               <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-gradient-to-r from-primary to-accent"></span>
             </a>
             <a href="/#kontak" className="text-muted-foreground transition-colors hover:text-accent">Kontak</a>
           </nav>
+          <div className="md:hidden">
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Buka menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right">
+                <nav className="flex flex-col gap-6 text-lg font-medium mt-8">
+                  <SheetClose asChild>
+                    <a href="/" className="text-muted-foreground hover:text-primary">Beranda</a>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <a href="/#tentang-saya" className="text-muted-foreground hover:text-primary">Tentang Saya</a>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <a href="/#apa-yang-saya-lakukan" className="text-muted-foreground hover:text-primary">Apa yang Saya Lakukan</a>
+                  </SheetClose>
+                   <SheetClose asChild>
+                    <a href="/#mitra-ai" className="text-muted-foreground hover:text-primary">Mitra AI Saya</a>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <a href="/karya" className="text-primary font-semibold">Karya Saya</a>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <a href="/#kontak" className="text-muted-foreground hover:text-primary">Kontak</a>
+                  </SheetClose>
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </header>
 

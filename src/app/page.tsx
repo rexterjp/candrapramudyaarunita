@@ -9,8 +9,9 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Progress } from '@/components/ui/progress';
-import { Github, Linkedin, Twitter, Laptop, BotMessageSquare, BrainCircuit, Globe, Mail, Phone, Layers, FileText } from 'lucide-react';
+import { Github, Linkedin, Twitter, Laptop, BotMessageSquare, BrainCircuit, Globe, Mail, Phone, Layers, FileText, Menu } from 'lucide-react';
 import { AnimatedSection } from '@/components/animated-section';
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 
 const navItems = [
     { id: 'hero', label: 'Beranda' },
@@ -95,6 +96,30 @@ export default function Home() {
                 );
             })}
           </nav>
+          <div className="md:hidden">
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Buka menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right">
+                <nav className="flex flex-col gap-6 text-lg font-medium mt-8">
+                  {navItems.map((item) => (
+                    <SheetClose asChild key={item.id}>
+                      <a
+                        href={`#${item.id}`}
+                        className="text-muted-foreground hover:text-primary"
+                      >
+                        {item.label}
+                      </a>
+                    </SheetClose>
+                  ))}
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </header>
 
@@ -167,7 +192,7 @@ export default function Home() {
           </div>
         </AnimatedSection>
 
-        <AnimatedSection id="apa-yang-saya-lakukan" className="py-20 md:py-24">
+        <AnimatedSection id="apa-yang-saya-lakukan" className="py-20 md:py-24 bg-background">
           <div className="container">
             <div className="space-y-12">
               <div className="text-center space-y-2">
@@ -293,7 +318,7 @@ export default function Home() {
           </div>
         </AnimatedSection>
 
-        <AnimatedSection id="karya-saya" className="py-20 md:py-24">
+        <AnimatedSection id="karya-saya" className="py-20 md:py-24 bg-background">
           <div className="container space-y-12">
             <div className="text-center space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Beberapa Karya Saya</h2>
