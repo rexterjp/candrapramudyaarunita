@@ -4,7 +4,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Github, Linkedin, Twitter, ArrowLeft } from 'lucide-react';
+import { Github, Linkedin, Twitter, ArrowLeft, Instagram } from 'lucide-react';
 import { AnimatedSection } from '@/components/animated-section';
 
 export default function KaryaPage() {
@@ -92,6 +92,9 @@ export default function KaryaPage() {
             </div>
             <div className="flex justify-center items-center">
               <div className="flex gap-2">
+                <Button variant="ghost" size="icon" asChild className="text-gray-400 hover:text-white rounded-full">
+                    <a href="https://www.instagram.com/candra.pramudya.arunita" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram className="h-5 w-5" /></a>
+                </Button>
                 <Button variant="ghost" size="icon" asChild className="text-gray-400 hover:text-white rounded-full">
                   <a href="#" aria-label="Twitter"><Twitter className="h-5 w-5" /></a>
                 </Button>

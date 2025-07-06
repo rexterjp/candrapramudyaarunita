@@ -9,7 +9,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Progress } from '@/components/ui/progress';
-import { Github, Linkedin, Twitter, Laptop, BotMessageSquare, BrainCircuit, Globe, Mail, Phone, Layers, FileText } from 'lucide-react';
+import { Github, Linkedin, Twitter, Laptop, BotMessageSquare, BrainCircuit, Globe, Mail, Phone, Layers, FileText, Instagram } from 'lucide-react';
 import { AnimatedSection } from '@/components/animated-section';
 
 const navItems = [
@@ -345,22 +345,31 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold">Informasi Kontak</h3>
                 <p className="text-muted-foreground">Hubungi melalui kanal berikut. Jangan ragu untuk mengirim pesan.</p>
                 <div className="space-y-4">
-                  <a href="mailto:halo@candrapmu.com" className="flex items-center gap-4 group">
+                  <a href="mailto:candrapramudya01@gmail.com" className="flex items-center gap-4 group">
                     <div className="p-3 bg-primary/10 rounded-md group-hover:bg-primary/20 transition-colors">
                       <Mail className="h-6 w-6 text-primary" />
                     </div>
                     <div>
                       <p className="font-semibold">Email</p>
-                      <p className="text-muted-foreground group-hover:text-primary transition-colors">halo@candrapmu.com</p>
+                      <p className="text-muted-foreground group-hover:text-primary transition-colors">candrapramudya01@gmail.com</p>
                     </div>
                   </a>
-                  <a href="https://wa.me/628123456789" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+                  <a href="https://wa.me/6285646452979" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                     <div className="p-3 bg-primary/10 rounded-md group-hover:bg-primary/20 transition-colors">
                       <Phone className="h-6 w-6 text-primary" />
                     </div>
                     <div>
                       <p className="font-semibold">WhatsApp</p>
-                      <p className="text-muted-foreground group-hover:text-primary transition-colors">Chat di WhatsApp</p>
+                      <p className="text-muted-foreground group-hover:text-primary transition-colors">085646452979</p>
+                    </div>
+                  </a>
+                  <a href="https://www.instagram.com/candra.pramudya.arunita" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+                    <div className="p-3 bg-primary/10 rounded-md group-hover:bg-primary/20 transition-colors">
+                        <Instagram className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                        <p className="font-semibold">Instagram</p>
+                        <p className="text-muted-foreground group-hover:text-primary transition-colors">@candra.pramudya.arunita</p>
                     </div>
                   </a>
                 </div>
@@ -406,6 +415,9 @@ export default function Home() {
             </div>
             <div className="flex justify-center items-center">
               <div className="flex gap-2">
+                <Button variant="ghost" size="icon" asChild className="text-gray-400 hover:text-white rounded-full">
+                  <a href="https://www.instagram.com/candra.pramudya.arunita" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram className="h-5 w-5" /></a>
+                </Button>
                 <Button variant="ghost" size="icon" asChild className="text-gray-400 hover:text-white rounded-full">
                   <a href="#" aria-label="Twitter"><Twitter className="h-5 w-5" /></a>
                 </Button>
