@@ -23,7 +23,7 @@ export default function Home() {
             </a>
             <a href="#tentang-saya" className="text-muted-foreground transition-colors hover:text-accent">Tentang Saya</a>
             <a href="#apa-yang-saya-lakukan" className="text-muted-foreground transition-colors hover:text-accent">Apa yang Saya Lakukan</a>
-            <a href="/karya" className="text-muted-foreground transition-colors hover:text-accent">Karya Saya</a>
+            <a href="#karya-saya" className="text-muted-foreground transition-colors hover:text-accent">Karya Saya</a>
             <a href="#kontak" className="text-muted-foreground transition-colors hover:text-accent">Kontak</a>
           </nav>
         </div>
