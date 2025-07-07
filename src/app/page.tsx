@@ -197,7 +197,7 @@ export default function Home() {
             <div className="text-center mt-12">
                 <Button asChild size="lg" variant="outline" className="text-primary border-primary hover:bg-accent hover:text-accent-foreground hover:border-accent hover:shadow-lg transition-all duration-300 hover:scale-105">
                     <a href="https://portal.candrave.com" target="_blank" rel="noopener noreferrer">
-                        Jelajahi Portofolio
+                        Kunjungi
                     </a>
                 </Button>
             </div>
