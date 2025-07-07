@@ -17,7 +17,7 @@ const navItems = [
     { id: 'tentang-saya', label: 'Tentang Saya' },
     { id: 'apa-yang-saya-lakukan', label: 'Apa yang Saya Lakukan' },
     { id: 'mitra-ai', label: 'Mitra AI Saya' },
-    { id: 'karya-saya', label: 'Karya Saya' },
+    { id: 'proyek-saya', label: 'Proyek Saya' },
     { id: 'kontak', label: 'Kontak' },
 ];
 
@@ -135,19 +135,6 @@ export default function Home() {
                       height={400} 
                       className="rounded-full object-cover w-48 h-48 md:w-64 md:h-64 shadow-lg"
                       data-ai-hint="professional portrait" />
-                </div>
-                <div className="text-center space-y-2">
-                  <p className="text-lg font-medium text-muted-foreground">Creator of</p>
-                  <div className="flex justify-center">
-                    <Image
-                      src="https://placehold.co/300x100.png"
-                      alt="CANDRAVE Logo"
-                      width={240}
-                      height={80}
-                      className="object-contain"
-                      data-ai-hint="candrave logo"
-                    />
-                  </div>
                 </div>
                 <div className="max-w-md mx-auto">
                   <h3 className="text-2xl sm:text-3xl font-bold tracking-tighter font-headline mb-8 text-center">Skill Utama Saya</h3>
@@ -308,19 +295,30 @@ export default function Home() {
           </div>
         </AnimatedSection>
 
-        <AnimatedSection id="karya-saya" className="py-20 md:py-24 bg-background">
+        <AnimatedSection id="proyek-saya" className="py-20 md:py-24 bg-background">
           <div className="container space-y-12">
             <div className="text-center space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Beberapa Karya Saya</h2>
-              <p className="text-muted-foreground md:text-xl max-w-2xl mx-auto">Menampilkan komitmen saya pada kualitas, kecepatan, dan estetika dalam setiap proyek yang saya kerjakan.</p>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Proyek Saya</h2>
+              <p className="text-muted-foreground md:text-xl max-w-2xl mx-auto">Berikut adalah beberapa proyek yang menunjukkan dedikasi saya dalam mengubah ide menjadi solusi digital yang nyata.</p>
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <Card className="overflow-hidden group">
-                <Image src="https://placehold.co/600x400.png" alt="Website Portofolio Kreatif" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="creative portfolio" />
-                <CardHeader>
-                  <CardTitle>Website Portofolio Kreatif</CardTitle>
-                  <CardDescription>Desain Web</CardDescription>
-                </CardHeader>
+                  <a href="https://portal.candrave.com" target="_blank" rel="noopener noreferrer" className="block h-full">
+                      <div className="flex flex-col items-center justify-center aspect-[3/2] bg-secondary/50 group-hover:bg-secondary transition-colors p-6">
+                          <Image
+                              src="https://placehold.co/300x100.png"
+                              alt="CANDRAVE Logo"
+                              width={240}
+                              height={80}
+                              className="object-contain"
+                              data-ai-hint="candrave logo"
+                          />
+                      </div>
+                      <CardHeader>
+                          <CardTitle>Portal CANDRAVE</CardTitle>
+                          <CardDescription>Gerbang utama menuju semua karya dan inovasi saya.</CardDescription>
+                      </CardHeader>
+                  </a>
               </Card>
               <Card className="overflow-hidden group">
                 <Image src="https://placehold.co/600x400.png" alt="Bot Info Komunitas" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="ai chatbot" />
@@ -340,7 +338,7 @@ export default function Home() {
             <div className="text-center mt-12">
                 <Button asChild size="lg" variant="outline" className="text-primary border-primary hover:bg-accent hover:text-accent-foreground hover:border-accent hover:shadow-lg transition-all duration-300 hover:scale-105">
                     <a href="https://portal.candrave.com" target="_blank" rel="noopener noreferrer">
-                        Lihat Karya Lainnya
+                        Lihat Proyek Lainnya
                     </a>
                 </Button>
             </div>
