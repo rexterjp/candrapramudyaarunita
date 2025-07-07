@@ -177,12 +177,11 @@ export default function Home() {
                <Card className="overflow-hidden group max-w-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <a href="https://portal.candrave.com" target="_blank" rel="noopener noreferrer" className="block">
                       <Image
-                          src="https://placehold.co/600x600.png"
-                          alt="Portal CANDRAVE"
+                          src="https://i.ibb.co/B2NS1f3G/candrave-no-bg.png"
+                          alt="Logo CANDRAVE"
                           width={600}
                           height={600}
                           className="object-cover w-full h-auto"
-                          data-ai-hint="candrave logo"
                       />
                   </a>
               </Card>
