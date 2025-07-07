@@ -171,7 +171,7 @@ export default function Home() {
           <div className="container space-y-12">
             <div className="text-center space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Proyek Saya</h2>
-              <p className="text-muted-foreground md:text-xl max-w-2xl mx-auto">Berikut adalah beberapa proyek pilihan saya.</p>
+              <p className="text-muted-foreground md:text-xl max-w-2xl mx-auto">Ini adalah proyek yang saya wujudkan.</p>
             </div>
             <div className="grid gap-8 justify-center">
                <Card className="overflow-hidden group max-w-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
