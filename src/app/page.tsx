@@ -324,11 +324,6 @@ export default function Home() {
                 </CardHeader>
               </Card>
             </div>
-            <div className="text-center">
-              <Button asChild size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-lg transition-all duration-300 hover:scale-105">
-                <a href="/karya">Lihat Semua Karya</a>
-              </Button>
-            </div>
           </div>
         </AnimatedSection>
 
