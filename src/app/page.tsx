@@ -301,7 +301,7 @@ export default function Home() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Proyek Saya</h2>
               <p className="text-muted-foreground md:text-xl max-w-2xl mx-auto">Berikut adalah beberapa proyek yang menunjukkan dedikasi saya dalam mengubah ide menjadi solusi digital yang nyata.</p>
             </div>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-8 justify-center">
               <Card className="overflow-hidden group">
                   <a href="https://portal.candrave.com" target="_blank" rel="noopener noreferrer" className="block h-full">
                       <div className="flex flex-col items-center justify-center aspect-[3/2] bg-secondary/50 group-hover:bg-secondary transition-colors p-6">
@@ -319,20 +319,6 @@ export default function Home() {
                           <CardDescription>Gerbang utama menuju semua karya dan inovasi saya.</CardDescription>
                       </CardHeader>
                   </a>
-              </Card>
-              <Card className="overflow-hidden group">
-                <Image src="https://placehold.co/600x400.png" alt="Bot Info Komunitas" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="ai chatbot" />
-                <CardHeader>
-                  <CardTitle>Bot Info Komunitas</CardTitle>
-                  <CardDescription>Automasi AI</CardDescription>
-                </CardHeader>
-              </Card>
-              <Card className="overflow-hidden group">
-                <Image src="https://placehold.co/600x400.png" alt="Blog Edukasi Digital" width={600} height={400} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" data-ai-hint="digital blog" />
-                <CardHeader>
-                  <CardTitle>Blog Edukasi Digital</CardTitle>
-                  <CardDescription>Konten & Web</CardDescription>
-                </CardHeader>
               </Card>
             </div>
             <div className="text-center mt-12">
