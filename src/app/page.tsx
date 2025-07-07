@@ -246,24 +246,24 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <form className="space-y-4">
+              <form action="https://formspree.io/f/xwpbdkqr" method="POST" className="space-y-4">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name">Nama Anda</Label>
-                    <Input id="name" placeholder="Nama Anda" />
+                    <Input id="name" name="name" placeholder="Nama Anda" required />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">Email Anda</Label>
-                    <Input id="email" type="email" placeholder="email.anda@contoh.com" />
+                    <Input id="email" type="email" name="email" placeholder="email.anda@contoh.com" required />
                   </div>
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="subject">Subjek</Label>
-                  <Input id="subject" placeholder="Perihal pesan Anda" />
+                  <Input id="subject" name="subject" placeholder="Perihal pesan Anda" required />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="message">Pesan Anda</Label>
-                  <Textarea id="message" placeholder="Tulis pesan Anda di sini..." rows={5} />
+                  <Textarea id="message" name="message" placeholder="Tulis pesan Anda di sini..." rows={5} required />
                 </div>
                 <Button type="submit" size="lg" className="w-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-lg transition-all duration-300 hover:scale-105">
                   Kirim Pesan
@@ -315,3 +315,4 @@ export default function Home() {
     </div>
   );
 }
+
