@@ -302,22 +302,16 @@ export default function Home() {
               <p className="text-muted-foreground md:text-xl max-w-2xl mx-auto">Berikut adalah beberapa proyek yang menunjukkan dedikasi saya dalam mengubah ide menjadi solusi digital yang nyata.</p>
             </div>
             <div className="grid gap-8 justify-center">
-              <Card className="overflow-hidden group max-w-sm">
-                  <a href="https://portal.candrave.com" target="_blank" rel="noopener noreferrer" className="block h-full">
-                      <div className="flex flex-col items-center justify-center aspect-square bg-secondary/50 group-hover:bg-secondary transition-colors p-6">
-                          <Image
-                              src="https://placehold.co/240x240.png"
-                              alt="CANDRAVE Logo"
-                              width={240}
-                              height={240}
-                              className="object-contain"
-                              data-ai-hint="candrave logo"
-                          />
-                      </div>
-                      <CardHeader className="text-center">
-                          <CardTitle>Portal CANDRAVE</CardTitle>
-                          <CardDescription>Gerbang utama menuju semua karya dan inovasi saya.</CardDescription>
-                      </CardHeader>
+               <Card className="overflow-hidden group max-w-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <a href="https://portal.candrave.com" target="_blank" rel="noopener noreferrer" className="block">
+                      <Image
+                          src="https://placehold.co/600x400.png"
+                          alt="Portal CANDRAVE"
+                          width={600}
+                          height={400}
+                          className="object-cover w-full h-auto"
+                          data-ai-hint="candrave logo"
+                      />
                   </a>
               </Card>
             </div>
