@@ -105,7 +105,7 @@ export default function Home() {
               Candra Pramudya Arunita: Inovator Digital & Penggerak Ide
             </h1>
             <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
-              Saya percaya pada kekuatan ide untuk mewujudkan transformasi digital. Dengan pemanfaatan alat AI dan Vibe Code untuk desain website, pengembangan bot, dan strategi digital, saya membantu visi Anda menjadi kenyataan.
+              Saya percaya pada kekuatan ide untuk mewujudkan transformasi digital. Dengan pemanfaatan alat AI dan Vibe Code untuk desain website, pengembangan bot, dan strategi digital menjadi kenyataan.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button asChild size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-lg transition-all duration-300 hover:scale-105">
@@ -181,7 +181,7 @@ export default function Home() {
                       src="https://i.ibb.co/B2NS1f3G/candrave-no-bg.png"
                       alt="Logo CANDRAVE"
                       width={600}
-                      height={600}
+                      height={400}
                       className="object-cover w-full h-auto"
                     />
                   </a>
@@ -315,4 +315,3 @@ export default function Home() {
     </div>
   );
 }
-
