@@ -173,18 +173,26 @@ export default function Home() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Proyek Saya</h2>
               <p className="text-muted-foreground md:text-xl max-w-2xl mx-auto">Ini adalah proyek yang saya wujudkan.</p>
             </div>
-            <div className="grid gap-8 justify-center">
-               <Card className="overflow-hidden group max-w-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div>
+                <Card className="overflow-hidden group shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <a href="https://portal.candrave.com" target="_blank" rel="noopener noreferrer" className="block">
-                      <Image
-                          src="https://i.ibb.co/B2NS1f3G/candrave-no-bg.png"
-                          alt="Logo CANDRAVE"
-                          width={600}
-                          height={600}
-                          className="object-cover w-full h-auto"
-                      />
+                    <Image
+                      src="https://i.ibb.co/B2NS1f3G/candrave-no-bg.png"
+                      alt="Logo CANDRAVE"
+                      width={600}
+                      height={600}
+                      className="object-cover w-full h-auto"
+                    />
                   </a>
-              </Card>
+                </Card>
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-2xl font-bold font-headline">CANDRAVE</h3>
+                <p className="text-muted-foreground md:text-lg">
+                  Ini adalah manifestasi nyata dari keyakinan saya bahwa setiap ide layak untuk tumbuh. Sebagai proyek utama yang saya bangun, CANDRAVE adalah platform dan gerakan yang didedikasikan untuk memberdayakan inovasi digital. Di sini, saya menerapkan metode #TanpaKode dan kekuatan Kecerdasan Buatan untuk menyediakan dukungan serta aksesibilitas bagi berbagai visi—dari website personal hingga solusi bisnis. CANDRAVE adalah bukti hidup bagaimana passion dan teknologi bisa bersinergi.
+                </p>
+              </div>
             </div>
             <div className="text-center mt-12">
                 <Button asChild size="lg" variant="outline" className="text-primary border-primary hover:bg-accent hover:text-accent-foreground hover:border-accent hover:shadow-lg transition-all duration-300 hover:scale-105">
