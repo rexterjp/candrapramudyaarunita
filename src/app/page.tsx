@@ -136,6 +136,19 @@ export default function Home() {
                       className="rounded-full object-cover w-48 h-48 md:w-64 md:h-64 shadow-lg"
                       data-ai-hint="professional portrait" />
                 </div>
+                <div className="text-center space-y-2">
+                  <p className="text-lg font-medium text-muted-foreground">Creator of</p>
+                  <div className="flex justify-center">
+                    <Image
+                      src="https://placehold.co/300x100.png"
+                      alt="CANDRAVE Logo"
+                      width={240}
+                      height={80}
+                      className="object-contain"
+                      data-ai-hint="candrave logo"
+                    />
+                  </div>
+                </div>
                 <div className="max-w-md mx-auto">
                   <h3 className="text-2xl sm:text-3xl font-bold tracking-tighter font-headline mb-8 text-center">Skill Utama Saya</h3>
                   <div className="space-y-6">
@@ -145,7 +158,7 @@ export default function Home() {
                           <span className="font-medium text-foreground">{skill.name}</span>
                           <span className="text-sm font-semibold text-primary">{skill.value}%</span>
                         </div>
-                        <Progress value={startProgressAnimation ? skill.value : 0} className="h-3" />
+                        <Progress value={startProgressAnimation ? skill.value : 0} className="h-3 transition-all duration-[10000ms] ease-linear" />
                       </div>
                     ))}
                   </div>
