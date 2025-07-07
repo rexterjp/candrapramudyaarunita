@@ -171,7 +171,7 @@ export default function Home() {
           <div className="container space-y-12">
             <div className="text-center space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Proyek Saya</h2>
-              <p className="text-muted-foreground md:text-xl max-w-2xl mx-auto">Berikut adalah beberapa proyek yang menunjukkan dedikasi saya dalam mengubah ide menjadi solusi digital yang nyata.</p>
+              <p className="text-muted-foreground md:text-xl max-w-2xl mx-auto">Berikut adalah beberapa proyek pilihan saya.</p>
             </div>
             <div className="grid gap-8 justify-center">
                <Card className="overflow-hidden group max-w-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -190,7 +190,7 @@ export default function Home() {
             <div className="text-center mt-12">
                 <Button asChild size="lg" variant="outline" className="text-primary border-primary hover:bg-accent hover:text-accent-foreground hover:border-accent hover:shadow-lg transition-all duration-300 hover:scale-105">
                     <a href="https://portal.candrave.com" target="_blank" rel="noopener noreferrer">
-                        Lihat Proyek Lainnya
+                        Jelajahi Portofolio
                     </a>
                 </Button>
             </div>
