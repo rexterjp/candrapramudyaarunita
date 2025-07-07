@@ -282,7 +282,7 @@ export default function Home() {
                 Candra Pramudya Arunita
               </a>
               <p className="text-sm max-w-xs">
-                Inovator Digital & Penggerak Ide, membantu visi Anda menjadi kenyataan.
+                Inovator Digital & Penggerak Ide yang membantu visi Anda menjadi kenyataan.
               </p>
             </div>
             <div className="flex justify-center items-center">
