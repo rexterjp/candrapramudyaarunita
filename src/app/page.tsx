@@ -15,7 +15,6 @@ import { AnimatedSection } from '@/components/animated-section';
 const navItems = [
     { id: 'hero', label: 'Beranda' },
     { id: 'tentang-saya', label: 'Tentang Saya' },
-    { id: 'apa-yang-saya-lakukan', label: 'Apa yang Saya Lakukan' },
     { id: 'mitra-ai', label: 'Mitra AI Saya' },
     { id: 'proyek-saya', label: 'Proyek Saya' },
     { id: 'kontak', label: 'Kontak' },
@@ -164,62 +163,6 @@ export default function Home() {
                 <p>
                   Kini, saya berkomitmen untuk memperluas semangat inovasi ini. Saya di sini untuk membantu Anda mewujudkan visi digital Anda, sama seperti bagaimana saya mengubah rasa penasaran saya menjadi kemampuan untuk menciptakan. Mari berkolaborasi, karena saya percaya, setiap ide punya potensi untuk bertransformasi!
                 </p>
-              </div>
-            </div>
-          </div>
-        </AnimatedSection>
-
-        <AnimatedSection id="apa-yang-saya-lakukan" className="py-20 md:py-24 bg-background">
-          <div className="container">
-            <div className="space-y-12">
-              <div className="text-center space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Ide yang Bisa Kita Wujudkan Bersama</h2>
-              </div>
-              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-                <Card className="text-center flex flex-col">
-                  <CardHeader className="flex-grow">
-                    <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit">
-                      <Laptop className="h-8 w-8 text-primary" />
-                    </div>
-                    <CardTitle className="mt-4 text-xl">Pembuatan Website Tanpa Kode (AI-Powered)</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">Mewujudkan website estetis dan fungsional untuk tahap awal atau kebutuhan dasar Anda, sepenuhnya dengan bantuan AI dan Vibe Code.</p>
-                  </CardContent>
-                </Card>
-                <Card className="text-center flex flex-col">
-                  <CardHeader className="flex-grow">
-                    <div className="mx-auto bg-accent/10 rounded-full p-4 w-fit">
-                      <BotMessageSquare className="h-8 w-8 text-accent" />
-                    </div>
-                    <CardTitle className="mt-4 text-xl">Automasi Chatbot Tanpa Kode</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">Mengoptimalkan komunikasi dasar dan layanan pelanggan melalui penerapan chatbot cerdas berbasis AI, tanpa perlu pemrograman kompleks.</p>
-                  </CardContent>
-                </Card>
-                <Card className="text-center flex flex-col">
-                  <CardHeader className="flex-grow">
-                    <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit">
-                      <BrainCircuit className="h-8 w-8 text-primary" />
-                    </div>
-                    <CardTitle className="mt-4 text-xl">Penerapan Solusi AI untuk Efisiensi</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">Membantu Anda menerapkan dan mengintegrasikan solusi AI sederhana untuk meningkatkan efisiensi digital bisnis Anda, sepenuhnya tanpa coding.</p>
-                  </CardContent>
-                </Card>
-                <Card className="text-center flex flex-col">
-                  <CardHeader className="flex-grow">
-                    <div className="mx-auto bg-accent/10 rounded-full p-4 w-fit">
-                      <Globe className="h-8 w-8 text-accent" />
-                    </div>
-                    <CardTitle className="mt-4 text-xl">Konsultasi Strategi Digital</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">Membantu Anda merumuskan strategi digital yang tepat untuk mewujudkan visi dan pertumbuhan Anda.</p>
-                  </CardContent>
-                </Card>
               </div>
             </div>
           </div>
